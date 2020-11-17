@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>MedicineShopBackEnd</AssemblyName>
+    <RootNamespace>MedicineShopBackEnd</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp2.1\SecurePrivacyBackEndTask.deps.json" />
+    <Content Include="bin\Debug\netcoreapp2.1\SecurePrivacyBackEndTask.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp2.1\SecurePrivacyBackEndTask.runtimeconfig.json" />
+    <Content Include="bin\Release\netcoreapp2.1\MedicineShopBackEnd.deps.json" />
+    <Content Include="bin\Release\netcoreapp2.1\MedicineShopBackEnd.runtimeconfig.dev.json" />
+    <Content Include="bin\Release\netcoreapp2.1\MedicineShopBackEnd.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp2.1\SecurePrivacy.Data.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\SecurePrivacy.Data.pdb" />
+    <None Include="bin\Debug\netcoreapp2.1\SecurePrivacy.Model.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\SecurePrivacy.Model.pdb" />
+    <None Include="bin\Debug\netcoreapp2.1\SecurePrivacy.Services.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\SecurePrivacy.Services.pdb" />
+    <None Include="bin\Debug\netcoreapp2.1\SecurePrivacyBackEndTask.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\SecurePrivacyBackEndTask.pdb" />
+    <None Include="bin\Release\netcoreapp2.1\MedicineShopBackEnd.Data.dll" />
+    <None Include="bin\Release\netcoreapp2.1\MedicineShopBackEnd.Data.pdb" />
+    <None Include="bin\Release\netcoreapp2.1\MedicineShopBackEnd.dll" />
+    <None Include="bin\Release\netcoreapp2.1\MedicineShopBackEnd.Model.dll" />
+    <None Include="bin\Release\netcoreapp2.1\MedicineShopBackEnd.Model.pdb" />
+    <None Include="bin\Release\netcoreapp2.1\MedicineShopBackEnd.pdb" />
+    <None Include="bin\Release\netcoreapp2.1\MedicineShopBackEnd.Services.dll" />
+    <None Include="bin\Release\netcoreapp2.1\MedicineShopBackEnd.Services.pdb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="4.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.7.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MedicineShopBackEnd.Data\MedicineShopBackEnd.Data.csproj" />
+    <ProjectReference Include="..\MedicineShopBackEnd.Services\MedicineShopBackEnd.Services.csproj" />
+  </ItemGroup>
+
+</Project>
